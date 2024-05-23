@@ -5,7 +5,6 @@ import android.graphics.Color
 import android.os.Bundle
 import android.view.KeyEvent
 import android.webkit.WebView
-import android.webkit.WebViewClient
 import androidx.activity.ComponentActivity
 import com.sarcasmappreciated.dnd.databinding.ActivityMainBinding
 
@@ -15,7 +14,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.webview.webViewClient = WebViewClient()
+        binding.webview.webViewClient = CookieWebViewClient()
         binding.webview.settings.javaScriptEnabled = true
         binding.webview.setBackgroundColor(Color.TRANSPARENT)
         binding.webview.loadUrl(resources.getString(R.string.url))
