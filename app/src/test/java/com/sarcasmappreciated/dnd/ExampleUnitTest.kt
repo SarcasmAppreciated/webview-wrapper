@@ -1,4 +1,4 @@
-package com.sarcasmappreciated.mtgwrapper
+package com.sarcasmappreciated.dnd
 
 import org.junit.Test
 

@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.sarcasmappreciated.mtgwrapper"
+    namespace = "com.sarcasmappreciated.dnd"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.sarcasmappreciated.mtgwrapper"
+        applicationId = "com.sarcasmappreciated.dnd"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -27,6 +27,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            signingConfig = signingConfigs.getByName("debug")
         }
     }
     compileOptions {
