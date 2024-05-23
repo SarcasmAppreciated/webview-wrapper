@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Scryfall Wrapper</string>
+    <string name="url">https://scryfall.com/</string>
+</resources>
