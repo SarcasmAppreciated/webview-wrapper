@@ -1,13 +1,12 @@
-package com.sarcasmappreciated.mtgwrapper
+package com.sarcasmappreciated.moxfield
 
 import android.annotation.SuppressLint
 import android.graphics.Color
 import android.os.Bundle
 import android.view.KeyEvent
 import android.webkit.WebView
-import android.webkit.WebViewClient
 import androidx.activity.ComponentActivity
-import com.sarcasmappreciated.mtgwrapper.databinding.ActivityMainBinding
+import com.sarcasmappreciated.moxfield.databinding.ActivityMainBinding
 
 class MainActivity : ComponentActivity() {
     @SuppressLint("SetJavaScriptEnabled")

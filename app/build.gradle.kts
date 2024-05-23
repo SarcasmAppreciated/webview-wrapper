@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.sarcasmappreciated.mtgwrapper"
+    namespace = "com.sarcasmappreciated.moxfield"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.sarcasmappreciated.mtgwrapper"
+        applicationId = "com.sarcasmappreciated.moxfield"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

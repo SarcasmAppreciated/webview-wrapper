@@ -1,4 +1,4 @@
-package com.sarcasmappreciated.mtgwrapper
+package com.sarcasmappreciated.moxfield
 
 import android.webkit.CookieManager
 import android.webkit.WebView

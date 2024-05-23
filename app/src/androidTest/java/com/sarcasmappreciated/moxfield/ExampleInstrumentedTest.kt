@@ -1,4 +1,4 @@
-package com.sarcasmappreciated.mtgwrapper
+package com.sarcasmappreciated.moxfield
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
