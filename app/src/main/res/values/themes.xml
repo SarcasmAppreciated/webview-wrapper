@@ -3,8 +3,8 @@
     <style name="Theme.MTGWrapper" parent="android:ThemeOverlay.Material.Dark">
         <item name="android:windowActionBar">false</item>
         <item name="android:windowNoTitle">true</item>
-        <item name="android:colorPrimary">@color/nav_80</item>
-        <item name="android:colorPrimaryDark">@color/nav_80</item>
-        <item name="android:colorAccent">@color/nav_80</item>
+        <item name="android:colorPrimary">@color/ic_launcher_moxfield_background</item>
+        <item name="android:colorPrimaryDark">@color/ic_launcher_moxfield_background</item>
+        <item name="android:colorAccent">@color/ic_launcher_moxfield_background</item>
     </style>
 </resources>
