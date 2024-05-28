@@ -5,8 +5,8 @@ import android.graphics.Color
 import android.os.Bundle
 import android.view.KeyEvent
 import android.webkit.WebView
-import android.webkit.WebViewClient
 import androidx.activity.ComponentActivity
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.sarcasmappreciated.scryfall.databinding.ActivityMainBinding
 
 class MainActivity : ComponentActivity() {
@@ -19,6 +19,13 @@ class MainActivity : ComponentActivity() {
         binding.webview.settings.javaScriptEnabled = true
         binding.webview.setBackgroundColor(Color.TRANSPARENT)
         binding.webview.loadUrl(resources.getString(R.string.url))
+
+        val wV: WebView = findViewById(R.id.webview)
+        val swipeLayout: SwipeRefreshLayout = this.findViewById(R.id.swipe);
+        swipeLayout.setOnRefreshListener {
+            wV.reload();
+            swipeLayout.isRefreshing = false
+        }
     }
 
     override fun onKeyDown(keyCode: Int, event: KeyEvent?): Boolean {
