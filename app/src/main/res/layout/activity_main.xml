@@ -6,8 +6,13 @@
     tools:context=".MainActivity"
     android:theme="@style/Theme.MTGWrapper"
     android:background="@color/ic_launcher_moxfield_background">
-    <WebView
-        android:id="@+id/webview"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 </FrameLayout>
