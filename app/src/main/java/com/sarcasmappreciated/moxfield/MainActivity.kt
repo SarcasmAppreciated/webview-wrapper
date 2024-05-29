@@ -20,9 +20,9 @@ class MainActivity : ComponentActivity() {
         binding.webview.loadUrl(resources.getString(R.string.url))
 
         val wV: WebView = findViewById(R.id.webview)
-        val swipeLayout: SwipeRefreshLayout = this.findViewById(R.id.swipe);
+        val swipeLayout: SwipeRefreshLayout = this.findViewById(R.id.swipe)
         swipeLayout.setOnRefreshListener {
-            wV.reload();
+            wV.reload()
             swipeLayout.isRefreshing = false
         }
     }
