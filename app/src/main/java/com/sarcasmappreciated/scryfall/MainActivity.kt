@@ -7,7 +7,6 @@ import android.content.Context
 import android.graphics.Color
 import android.os.Bundle
 import android.view.KeyEvent
-import android.webkit.URLUtil
 import android.webkit.WebView
 import android.widget.Toast
 import androidx.activity.ComponentActivity
@@ -52,14 +51,10 @@ class MainActivity : ComponentActivity() {
     private fun copyToClipboard() {
         webView.hitTestResult.let{
             val url = it.extra
-            if (URLUtil.isValidUrl(url)) {
-                val clipboard = getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
-                val clip = ClipData.newPlainText(tag, url)
-                clipboard.setPrimaryClip(clip)
-                Toast.makeText(this, "Copied $url", Toast.LENGTH_LONG).show()
-            } else {
-                Toast.makeText(this, "There was a problem.", Toast.LENGTH_LONG).show()
-            }
+            val clipboard = getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
+            val clip = ClipData.newPlainText(tag, url)
+            clipboard.setPrimaryClip(clip)
+            Toast.makeText(this, "Copied $url", Toast.LENGTH_LONG).show()
         }
     }
 }
