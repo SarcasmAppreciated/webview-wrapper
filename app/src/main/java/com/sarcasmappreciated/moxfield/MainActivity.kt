@@ -14,7 +14,7 @@ import androidx.activity.ComponentActivity
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.sarcasmappreciated.moxfield.databinding.ActivityMainBinding
 class MainActivity : ComponentActivity() {
-    private val tag = "SCRYFALL"
+    private val tag = "MOXFIELD"
     private lateinit var webView: WebView
 
     @SuppressLint("SetJavaScriptEnabled")
