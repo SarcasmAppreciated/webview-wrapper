@@ -15,7 +15,7 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.sarcasmappreciated.dnd.databinding.ActivityMainBinding
 
 class MainActivity : ComponentActivity() {
-    private val tag = "SCRYFALL"
+    private val tag = "DND"
     private lateinit var webView: WebView
 
     @SuppressLint("SetJavaScriptEnabled")
